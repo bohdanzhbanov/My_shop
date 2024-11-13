@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .block{
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));  
+    background-blend-mode: overlay;
+    width: 250px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  
+
+  .categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categories li {
+    margin: 10px 0;
+}
+
+.product-category {
+    display: none; /* За замовчуванням категорії приховані */
+}
+
+.product-category.active {
+    display: block;
+}
+  .picture{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    margin: 20px;  
+  }
+  
+  .img {
+    width: auto;
+    max-width: 100%; 
+    max-height: 100%; 
+    display: block; 
+    margin: auto;
+  }
+  
+  .infor {
+      padding: 20px; 
+  }
+  
+  
+  .buy {
+        background-color: #4CAF50; 
+        border: none;
+        color: white;
+        padding: 5px 20px 5px 23px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+  
+  .buy-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .fa-cart-shopping {
+        margin-right: 8px;
+    }
+    
+  
+  
+  
+  
+   .block-wrapper{
+     min-height: 100vh;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;;
+     align-items: center;
+     margin-top: 70px;
+     gap: 20px; 
+     padding: 10px;
+     align-items: stretch;
+    
+   }
+  
+  
+  
+   body{
+     background-image: url(images/another/fon.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+   }
+   .top-bar {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 50px; 
+       background-color: #FFFF;
+       z-index: 1000;
+       display: flex;
+       align-items: center; 
+       justify-content: space-around; 
+       padding: 0 20px; 
+   }
+  
+   .top-bar-content {
+       display: flex;
+       align-items: center;
+       justify-content: flex-start; 
+       height: 100%;
+   }
+  
+   .logo {
+       height: 40px; 
+       width: auto;
+  
+  
+   }
+  
+   .shop-name {
+       display: inline-block;
+       color: #333; 
+       font-size: 20px; 
+       margin-left: 10px; 
+      
+   }
+  
+  @media (max-width: 900px) {
+  
+  }
+  
+  
+  
+  @media (max-width: 600px) {
+      .shop-name {
+        display: none;
+    }
+      .block-wrapper{
+        justify-content: flex-start;
+        
+    }
+  }
+  
+  .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px; 
+      background-color: #FFFF;
+      z-index: 1000;
+      display: flex;
+      align-items: center; 
+      justify-content: flex-start; 
+      padding: 0 20px; 
+  }
+  
+  .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: spase-between; 
+      height: 100%;
+  }
+  
+  .top_logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    height: 100%
+  }
+  
+  .logo {
+      height: 40px; 
+      width: auto;
+  
+    
+  }
+  
+  .shop-name {
+      color: #333; 
+      font-size: 20px; 
+      margin-left: 10px; 
+  }
+  
+  .search-container{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .search-form {
+      display: flex;
+      align-items: center;
+  }
+  
+  .search-form input[type="text"] {
+      padding: 5px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+  }
+  
+  .search-form button {
+      padding: 5px 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 0 5px 5px 0; 
+  }
+  
+  .search-form button:hover {
+      background-color: #555;
+  }
+  
+  .sign-in-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 10px;
+  }
+  
+  .sign-in-button:hover {
+      background-color: #45a049;
+  }
+  
+  .right{
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%; 
+  }
+  .footer {
+    background-color: #333; 
+    color: #fff; 
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    padding: 20px;
+    margin-top: 20px;
+    bottom: 0;
+  }
+  
+  .footer-content {
+      display: flex;
+      flex-direction: row; 
+      justify-content: space-between; 
+      align-items: flex-end; 
+      width: 100%;
+  }
+  
+  
+  .forma {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-bottom: 20px; 
+  }
+  
+  
+  .for {
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px;
+  }
+  
+  .for:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0,123,255,.5); 
+    outline: none; 
+  }
+  
+  
+  .but {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+  }
+  
+  .contacts, .registration-form {
+      padding: 10px;
+  }
+  
+  .contacts h3, .registration-form h3 {
+      color: #ffcc00; 
+  }
+  
+  .contacts p, .registration-form form {
+      margin: 5px 0; 
+  }
+  
+  .form-group {
+    display: flex;
+    width: 230px;
+   
+  }
+  
+  
+  
+  
+  .button-group button {
+    background-color: green; 
+    color: white;
+    padding: 10px 24px; 
+    cursor: pointer; 
+    border: none; 
+    border-radius: 5px; 
+    margin-top: 15px;
+    margin-left: 50px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  form label {
+    width: 70px;
+  }
+  
+  
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

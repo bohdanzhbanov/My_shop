@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>replit</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<div class="header">
+  <div class="header-content">
+    <div class="top_logo">
+      <img src="images/another/icon_goose.png" alt="Логотип" class="logo">
+      <span class="shop-name">Гусьтрот</span>
+    </div>
+
+
+  </div>
+
+<div class="search-container">
+     <form class="search-form">
+         <input type="text" placeholder="Пошук..." name="search">
+         <button type="submit">🔍</button>
+     </form>
+ </div>
+
+<div class="right">
+<div class="sign-in-container">
+  <button class="sign-in-button" id="signInBtn">Sign In</button>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+<body>
+  <section class="block-wrapper">
+
+
+    <div class="categories">
+      <h2>Категорії товарів</h2>
+      <ul>
+          <li><a href="#category1">Спортивне взуття</a></li>
+          <li><a href="#category2">Жіноче взуття</a></li>
+          <li><a href="#category3">Чоловіче взуття</a></li>
+          <li><a href="#category4">Шкіряні сумки</a></li>
+      </ul>
+  </div>
+  
+  <div class="products">
+      <!-- Товари будуть відображатися в залежності від вибраної категорії -->
+      <div id="category1" class="product-category">
+          <h3>Спортивне взуття</h3>
+          <div class="product">Кросівки Adidas</div>
+          <div class="product">Кросівки Nike</div>
+      </div>
+      <div id="category2" class="product-category">
+          <h3>Жіноче взуття</h3>
+          <div class="product">Туфлі з шкіри</div>
+          <div class="product">Балетки</div>
+      </div>
+      <!-- Додайте інші категорії... -->
+  </div>
+*///////*
+
+    <div class="block">
+      <div class="picture">
+             <img class="img" src="images/images_items/goose.png" alt="goose">
+      </div>
+
+       <div class="infor">
+            <h3>Гусь до всьго придовбусь</h3>
+            <div class="buy-container">
+              <span class ="price">200<small>₴</small></span>
+              <button class="buy">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  
+              </button>
+            </div>
+       </div>
+    </div>
+
+    <div class="block">
+      <div class="picture">
+             <img class="img" src="images/images_items/phone.png" alt ="">
+      </div>
+
+       <div class="infor">
+            <h3>Samsung Galaxy S24</h3>
+            <div class="buy-container">
+              <span class="price">20000<small>₴</small></span>
+              <button class="buy">
+                  <i class="fa-solid fa-cart-shopping"></i>
+
+              </button>
+            </div>
+       </div>
+    </div>
+
+    <div class="block">
+      <div class="picture">
+             <img class="img" src="images/images_items/phone_2.png" alt="IPhone">
+      </div>
+
+       <div class="infor">
+            <h3>IPhone 15</h3>
+            <div class="buy-container">
+              <span class="price">20000<small>₴</small></span>
+              <button class="buy">
+                  <i class="fa-solid fa-cart-shopping"></i>
+
+              </button>
+            </div>
+       </div>
+    </div>
+
+    <div class="block">
+      <div class="picture">
+             <img class="img" src="images/images_items/shrek_2.png" alt="shrek">
+      </div>
+
+       <div class="infor">
+            <h3>shrek</h3>
+            <div class="buy-container">
+              <span class ="price">2000<small>₴</small></span>
+              <button class="buy">
+                  <i class="fa-solid fa-cart-shopping"></i>
+
+              </button>
+            </div>
+       </div>
+    </div>
+
+    <div class="block">
+      <div class="picture">
+             <img class="img" src="images/images_items/fish.png" alt="fish">
+      </div>
+
+       <div class="infor">
+            <h3>Карась</h3>
+            <div class="buy-container">
+              <span class ="price">300<small>₴</small></span>
+              <button class="buy">
+                  <i class="fa-solid fa-cart-shopping"></i>
+
+              </button>
+            </div>
+       </div>
+    </div>
+
+    <div class="block">
+      <div class="picture">
+             <img class="img" src="images/images_items/rayn_gosling.jpg" alt="rayn">
+      </div>
+
+       <div class="infor">
+            <h3>Райн Гослінг</h3>
+            <div class="buy-container">
+              <span class ="price">100000000<small>₴</small></span>
+              <button class="buy">
+                  <i class="fa-solid fa-cart-shopping"></i>
+
+              </button>
+            </div>
+       </div>
+    </div>
+
+  </section>
+
+    
+
+  <div id="myModal" class="modal" style="display:none;">
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Реєстрація</h3>
+      <form>
+
+        <div class="form-group">
+          <label for="name">Ім'я:</label>
+          <input type="text" id="name" name="name"><br>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br>
+        </div>
+        <div class="form-group">
+          <label for="password">Пароль:</label>
+          <input type="password" id="password" name="password"><br>
+        </div>
+        <div class="button-group">
+          <button type="login">Зареєструватися</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+  
+</body>
+<div class="footer">
+<div class="footer-content">
+  
+  <div class="contacts">
+      <h3>Контакти</h3>
+      <p>Email: gosbtrot@gmail.com</p>
+      <p>Телефон: +380 12 345 8880</p>
+  </div>
+  <form action="" method="post">
+    <div class="forma">
+     <input type="text" class="for" placeholder="Iм'я">
+    <input type="email" class="for" placeholder="email">
+    </div>
+    <div class="forma">
+    <textarea class="for" placeholder="Коментар"></textarea>
+    </div>
+    <button type="submit" class="but">Відправити</button>
+  </form>
+</div>
+</div>
+
+</html>
