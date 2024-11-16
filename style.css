@@ -20,22 +20,7 @@
   }
   
 
-  .categories ul {
-    list-style-type: none;
-    padding: 0;
-}
 
-.categories li {
-    margin: 10px 0;
-}
-
-.product-category {
-    display: none; /* За замовчуванням категорії приховані */
-}
-
-.product-category.active {
-    display: block;
-}
   .picture{
     display: flex;
     justify-content: center;
@@ -142,7 +127,7 @@
    }
   
   @media (max-width: 900px) {
-  
+ 
   }
   
   
